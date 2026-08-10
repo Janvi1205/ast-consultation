@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-emerald-deep: #064E3B;
+  --color-emerald-forest: #022C22;
+  --color-emerald-rich: #087F5B;
+  --color-emerald-light: #DCEFE8;
+  --color-sage-soft: #E8F3EE;
+  --color-ivory-warm: #FAF9F5;
+  --color-gold-champagne: #C9A227;
+  --color-gold-muted: #B89435;
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-sans: 'DM Sans', 'Inter', sans-serif;
+}
+
+:root {
+  --emerald-deep: #064E3B;
+  --emerald-forest: #022C22;
+  --emerald-rich: #087F5B;
+  --emerald-light: #DCEFE8;
+  --sage-soft: #E8F3EE;
+  --ivory-warm: #FAF9F5;
+  --gold-champagne: #C9A227;
+  --gold-muted: #B89435;
+  font-family: 'DM Sans', 'Inter', sans-serif;
+  color-scheme: light dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FAF9F5;
+  color: #022C22;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #FAF9F5;
+  color: #022C22;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #022C22;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #087F5B;
+  border-radius: 5px;
+  border: 2px solid #022C22;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A227;
+}
+
+/* Typography Helpers */
+.font-serif-heading {
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+}
+
+.font-sans-body {
+  font-family: 'DM Sans', 'Inter', sans-serif;
+}
+
+/* Custom Gradients */
+.bg-gradient-hero {
+  background: radial-gradient(circle at 70% 30%, #064E3B 0%, #022C22 70%);
+}
+
+.bg-gradient-card {
+  background: linear-gradient(135deg, rgba(6, 78, 59, 0.95) 0%, rgba(2, 44, 34, 0.98) 100%);
+}
+
+.bg-gradient-gold-text {
+  background: linear-gradient(135deg, #E6C875 0%, #C9A227 50%, #B89435 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-gold-border {
+  border-image: linear-gradient(135deg, #C9A227, rgba(201, 162, 39, 0.2)) 1;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F0E6A5 0%, #C9A227 60%, #997819 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Islamic Geometric Pattern Overlay */
+.islamic-pattern-bg {
+  background-image: radial-gradient(rgba(201, 162, 39, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.islamic-star-pattern {
+  background-image: repeating-linear-gradient(45deg, rgba(8, 127, 91, 0.03) 0, rgba(8, 127, 91, 0.03) 1px, transparent 0, transparent 50%);
+  background-size: 20px 20px;
+}
+
+/* Soft Glows */
+.gold-glow {
+  box-shadow: 0 0 25px rgba(201, 162, 39, 0.25);
+}
+
+.emerald-glow {
+  box-shadow: 0 0 30px rgba(8, 127, 91, 0.2);
+}
+
+/* Micro Animations */
+@keyframes subtlePulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: subtlePulse 3s ease-in-out infinite;
+}
+
+@keyframes celestialFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+.animate-celestial {
+  animation: celestialFloat 6s ease-in-out infinite;
+}
