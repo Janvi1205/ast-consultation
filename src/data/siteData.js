@@ -334,10 +334,7 @@ export const FAQS_LIST = [
     q: "Can I consult online?",
     a: "Yes. All consultations can be conveniently conducted online via WhatsApp messaging, voice call, or video call based on your preference."
   },
-  {
-    q: "What information should I provide?",
-    a: "Basic details such as your Full Name, Date of Birth, Time of Birth, Place of Birth, and a brief description of the concern you would like to discuss."
-  },
+
   {
     q: "Do I need my exact birth time?",
     a: "While exact birth time allows for precise horoscope chart calculation, meaningful guidance can still be offered based on date of birth, name analysis, and spiritual consultation."

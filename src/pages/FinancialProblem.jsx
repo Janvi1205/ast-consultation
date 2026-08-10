@@ -5,7 +5,6 @@ import SEOHead from '../components/SEOHead';
 import SectionHeading from '../components/SectionHeading';
 import CTASection from '../components/CTASection';
 import IslamicPattern from '../components/IslamicPattern';
-import TrustRow from '../components/TrustRow';
 import { BRAND, SERVICES_LIST } from '../data/siteData';
 
 export default function FinancialProblem() {
@@ -20,7 +19,7 @@ export default function FinancialProblem() {
       />
 
       {/* HERO BANNER */}
-      <section className="relative bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-[#FAF9F5] pt-36 pb-20 overflow-hidden">
+      <section className="relative bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-[#FAF9F5] pt-36 pb-24 overflow-hidden rounded-b-xl sm:rounded-b-2xl lg:rounded-b-[2rem] shadow-lg">
         <IslamicPattern opacity="opacity-[0.05]" variant="stars" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
@@ -36,30 +35,6 @@ export default function FinancialProblem() {
           <p className="text-base sm:text-lg text-emerald-100/90 font-light max-w-2xl mx-auto leading-relaxed">
             Astrological and spiritual guidance for individuals facing financial uncertainty or seeking greater clarity around important financial situations.
           </p>
-
-          <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              to="/book-consultation?service=financial-problem"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-[#C9A227] to-[#B89435] text-[#022C22] font-bold text-sm uppercase tracking-wider shadow-xl hover:brightness-110 transition-all"
-            >
-              <Calendar className="w-5 h-5" />
-              <span>BOOK A CONSULTATION</span>
-            </Link>
-
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-[#087F5B] hover:bg-[#064E3B] text-white font-semibold text-sm uppercase tracking-wider transition-all border border-[#C9A227]/30 shadow-xl"
-            >
-              <MessageCircle className="w-5 h-5 fill-current" />
-              <span>Chat on WhatsApp</span>
-            </a>
-          </div>
-
-          <div className="pt-6 flex justify-center">
-            <TrustRow />
-          </div>
         </div>
       </section>
 

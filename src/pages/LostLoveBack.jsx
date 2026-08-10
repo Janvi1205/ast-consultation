@@ -6,7 +6,6 @@ import SectionHeading from '../components/SectionHeading';
 import FAQ from '../components/FAQ';
 import CTASection from '../components/CTASection';
 import IslamicPattern from '../components/IslamicPattern';
-import TrustRow from '../components/TrustRow';
 import OptimizedImage from '../components/OptimizedImage';
 import { BRAND, SERVICES_LIST } from '../data/siteData';
 
@@ -22,7 +21,7 @@ export default function LostLoveBack() {
       />
 
       {/* HERO BANNER */}
-      <section className="relative bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-[#FAF9F5] pt-36 pb-20 overflow-hidden">
+      <section className="relative bg-gradient-to-b from-[#022C22] via-[#064E3B] to-[#022C22] text-[#FAF9F5] pt-36 pb-24 overflow-hidden rounded-b-xl sm:rounded-b-2xl lg:rounded-b-[2rem] shadow-lg">
         <IslamicPattern opacity="opacity-[0.05]" variant="stars" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
@@ -38,30 +37,6 @@ export default function LostLoveBack() {
           <p className="text-base sm:text-lg text-emerald-100/90 font-light max-w-2xl mx-auto leading-relaxed">
             When a relationship changes or comes to an end, uncertainty can be difficult. Receive personalized astrological and spiritual guidance based on your individual situation.
           </p>
-
-          <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              to="/book-consultation?service=lost-love-back"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-[#C9A227] to-[#B89435] text-[#022C22] font-bold text-sm uppercase tracking-wider shadow-xl hover:brightness-110 transition-all"
-            >
-              <Calendar className="w-5 h-5" />
-              <span>Book Consultation</span>
-            </Link>
-
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-[#087F5B] hover:bg-[#064E3B] text-white font-semibold text-sm uppercase tracking-wider transition-all border border-[#C9A227]/30 shadow-xl"
-            >
-              <MessageCircle className="w-5 h-5 fill-current" />
-              <span>Discuss via WhatsApp</span>
-            </a>
-          </div>
-
-          <div className="pt-6 flex justify-center">
-            <TrustRow />
-          </div>
         </div>
       </section>
 
@@ -116,29 +91,29 @@ export default function LostLoveBack() {
           </div>
 
           {/* WHAT THE CONSULTATION COVERS & SPIRITUAL SUPPORT */}
-          <div className="bg-[#022C22] text-white rounded-3xl p-10 lg:p-14 border border-[#C9A227]/30 shadow-2xl space-y-8">
-            <h2 className="font-serif text-3xl font-bold text-[#C9A227]">
+          <div className="bg-white rounded-3xl p-10 lg:p-14 border border-emerald-900/10 shadow-2xl space-y-8">
+            <h2 className="font-serif text-3xl font-bold text-[#022C22]">
               What the Consultation Covers
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 rounded-2xl bg-[#064E3B]/80 border border-[#C9A227]/20 space-y-2">
-                <h3 className="font-serif text-xl font-bold text-white">1. Horoscopic Analysis</h3>
-                <p className="text-xs text-emerald-100/80 font-light leading-relaxed">
+              <div className="p-6 rounded-2xl bg-[#FAF9F5] border border-emerald-900/10 space-y-2">
+                <h3 className="font-serif text-xl font-bold text-[#022C22]">1. Horoscopic Analysis</h3>
+                <p className="text-xs text-emerald-950/80 font-light leading-relaxed">
                   Evaluating 7th House, Venus placement, and current planetary Mahadasha cycles affecting emotional bonding.
                 </p>
               </div>
 
-              <div className="p-6 rounded-2xl bg-[#064E3B]/80 border border-[#C9A227]/20 space-y-2">
-                <h3 className="font-serif text-xl font-bold text-white">2. Spiritual Supplication</h3>
-                <p className="text-xs text-emerald-100/80 font-light leading-relaxed">
+              <div className="p-6 rounded-2xl bg-[#FAF9F5] border border-emerald-900/10 space-y-2">
+                <h3 className="font-serif text-xl font-bold text-[#022C22]">2. Spiritual Supplication</h3>
+                <p className="text-xs text-emerald-950/80 font-light leading-relaxed">
                   Guidance on tailored Dua and Wazifa practices aimed at cultivating forgiveness, peace, and mutual love.
                 </p>
               </div>
 
-              <div className="p-6 rounded-2xl bg-[#064E3B]/80 border border-[#C9A227]/20 space-y-2">
-                <h3 className="font-serif text-xl font-bold text-white">3. Personal Resolution</h3>
-                <p className="text-xs text-emerald-100/80 font-light leading-relaxed">
+              <div className="p-6 rounded-2xl bg-[#FAF9F5] border border-emerald-900/10 space-y-2">
+                <h3 className="font-serif text-xl font-bold text-[#022C22]">3. Personal Resolution</h3>
+                <p className="text-xs text-emerald-950/80 font-light leading-relaxed">
                   Clear, pragmatic advice on communication steps and handling personal relationship hesitation.
                 </p>
               </div>
